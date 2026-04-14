@@ -1,0 +1,16 @@
+.navbar{
+  background-color: transparent!important;
+  color: white!important;
+}
+a{
+  color: white!important;
+}
+li a:hover{
+  background-color: #662222!important;
+  color: white!important;
+  border-width: 3px;
+  border-style:solid;
+  /* border-radius: 20px; */
+  border-image: linear-gradient(to bottom, #83580B, #F5DD7B, #83580B) 3;
+  }
+
