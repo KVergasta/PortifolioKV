@@ -2,9 +2,16 @@
   background-color: transparent!important;
   color: white!important;
 }
+
+.navbar-brand{
+  font-family: 'Playfair Display';
+  font-size: 25px;
+}
+
 a{
   color: white!important;
 }
+
 li a:hover{
   background-color: #662222!important;
   color: white!important;
@@ -14,3 +21,8 @@ li a:hover{
   border-image: linear-gradient(to bottom, #83580B, #F5DD7B, #83580B) 3;
   }
 
+.logo{
+  display: flex!important;
+  /* margin-left: 1%!important; */
+  margin-right: 3% !important;
+}

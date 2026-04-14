@@ -1,0 +1,25 @@
+.home{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10%;
+  background-color: #842A3B;
+}
+
+img{
+    max-width: 15%;
+    height: auto;   /* Mantém a proporção */
+}
+
+h1{
+  font-family: 'Playfair Display';
+}
+
+h3{
+  font-family: 'Dancing Scrip'!important;
+}
+
+/* .frase{
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column;
+} */

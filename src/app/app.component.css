@@ -1,8 +1,15 @@
 .app-contaiener{
-    background-image: url('/assets/visax.jpg');
+  background-image: url('/assets/visax.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh; /* Ocupa toda a altura da tela */
+  height: 100%;
   width: 100%;
+  color: white;
+}
+
+.main-content{
+  margin-left: 5%!important;
+  margin-top: 5%!important;
+  margin-right: 5%!important;
 }
