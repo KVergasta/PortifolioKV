@@ -1,20 +1,41 @@
-.home{
+ .home{
   display: flex;
   flex-direction: row;
   padding-bottom: 10%;
-  background-color: #842A3B;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #842A3B; */
+}
+
+button{
+  background-color: transparent !important;
+  border: solid;
+  border-color: #F3F4F4;
+  color: aliceblue;
+  padding: 5%;
+  border-radius: 5px;
+  margin-right: 2%;
+}
+
+
+button:hover{
+  background-color: #F3F4F4!important;
+  color: black;
+  font-style: bold;
 }
 
 img{
-    max-width: 15%;
+    max-width: 30%;
     height: auto;   /* Mantém a proporção */
 }
 
 h1{
+  font-size: 55px;
   font-family: 'Playfair Display';
 }
 
 h3{
+  font-size: 40px;
   font-family: 'Dancing Scrip'!important;
 }
 

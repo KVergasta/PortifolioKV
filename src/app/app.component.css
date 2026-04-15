@@ -1,15 +1,16 @@
 .app-contaiener{
-  background-image: url('/assets/visax.jpg');
+  background-image: url('/assets/alex.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 100%;
+  background-attachment: fixed !important;
+  min-height: 100%;
   width: 100%;
   color: white;
 }
 
 .main-content{
-  margin-left: 5%!important;
-  margin-top: 5%!important;
-  margin-right: 5%!important;
+  /* margin-left: 5%!important; */
+  /* margin-top: 10%!important; */
+  /* margin-right: 5%!important; */
 }
