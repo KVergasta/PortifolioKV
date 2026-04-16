@@ -1,55 +1,69 @@
-<div class="sobre'">
+<section class="sobre-container">
 
-  <div class="texto">
-    <h1>Sobre Mim</h1>
-    <p>Quem sou eu?</p>
-    <p>Sou desenvolvedora full-stack com experência em Angular e SpringBoot.</p>
+  <div class="intro">
+    <h1 class="titulo-principal">Sobre Mim</h1>
+    <p class="subtitulo-manuscrito">Quem sou eu?</p>
+    <p class="descricao-breve">Desenvolvedora com foco em soluções escaláveis e design centrado no usuário. Com experiência prática no desenvolvimento de APIs RESTful e microsserviços, domino o stack Java/Spring Boot, priorizando sempre o Clean Code e a resiliência do software.
+
+No Front-end, utilizo Angular e TypeScript para criar interfaces modernas que comunicam eficiência e profissionalismo. Meus projetos, como o NotificationHub e o LogisticManager, refletem minha habilidade em unir a robustez necessária do backend com a elegância exigida pelo mercado atual. Estou em busca de desafios que me permitam elevar o nível técnico de produtos digitais, garantindo entregas de ponta a ponta</p>
   </div>
 
-  <!-- <img src="/assets/laptop.jpg" alt="laptop"> -->
+  <div class="container content-wrapper">
+    <div class="row gy-5 align-items-center">
 
-  <div class="cardsG">
-    <div class="card">
-      <div class="card-body">
-        <mat-icon>equalizer</mat-icon>
-        <h5>Foco em resultado</h5>
-        <p>Soluções que geram valor</p>
+      <div class="col-12 col-md-5 d-flex justify-content-center">
+        <div class="foto-moldura">
+          <img src="/assets/perfil.webp" class="img-perfil" alt="Kauane Vergasta">
+        </div>
       </div>
-    </div>
 
-    <div class="card">
-      <div class="card-body">
-        <mat-icon>computer</mat-icon>
-        <h5>Apaixonada por código</h5>
-        <p>Transforma lógica em soluções reais</p>
-      </div>
-    </div>
+      <div class="col-12 col-md-7">
+        <div class="cards-grid">
 
-    <div class="card">
-      <div class="card-body">
-        <mat-icon>favorite</mat-icon>
-        <h5>Aprendizado constante</h5>
-        <p>Curiosa por natureza e sempre buscando evoluir</p>
-      </div>
-    </div>
-  </div>
+          <div class="card-item">
+            <mat-icon>equalizer</mat-icon>
+            <div class="card-info">
+              <h5>Foco em resultado</h5>
+              <p>Soluções que geram valor real para o negócio.</p>
+            </div>
+          </div>
 
-  <div class="cv">
-    <div class="card">
-      <div class="card-body">
-        <div class="texto-card">
-          <div class="work">
-          <mat-icon>work</mat-icon> <p>1+ Experiência </p>
+          <div class="card-item">
+            <mat-icon>computer</mat-icon>
+            <div class="card-info">
+              <h5>Apaixonada por código</h5>
+              <p>Transformando lógica complexa em sistemas fluidos.</p>
+            </div>
           </div>
-          <div class="project">
-          <mat-icon>monitor</mat-icon> <p>3 Projetos </p>
+
+          <div class="card-item">
+            <mat-icon>favorite</mat-icon>
+            <div class="card-info">
+              <h5>Aprendizado constante</h5>
+              <p>Curiosidade técnica para evoluir a cada commit.</p>
+            </div>
           </div>
-          <div class="techh">
-          <mat-icon>code</mat-icon> <p>+5 Tecnologias</p>
-          </div>
+
         </div>
       </div>
     </div>
   </div>
 
-</div>
+  <div class="container mt-5">
+    <div class="stats-bar">
+      <div class="stat-item">
+        <mat-icon>work</mat-icon>
+        <span><strong>1+</strong> Ano de Experiência</span>
+      </div>
+      <div class="stat-item">
+        <mat-icon>monitor</mat-icon>
+        <span><strong>3</strong> Projetos Reais</span>
+      </div>
+      <div class="stat-item">
+        <mat-icon>code</mat-icon>
+        <span><strong>+5</strong> Tecnologias</span>
+      </div>
+    </div>
+  </div>
+
+</section>

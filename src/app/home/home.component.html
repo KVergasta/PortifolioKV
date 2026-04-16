@@ -1,24 +1,31 @@
-<section id="home" class="container py-5">
-  <div class="home row align-items-center g-4">
-    <div class="intro col-md-7">
-      <h1>Kauane Vergasta</h1>
-      <h3>Software Developer -  FullStack</h3>
-      <div class="frase">
-        <p id="citacao">"Aqueles que podem imaginar qualquer coisa, podem criar o impossível".</p>
-        <p id="autor">Alan Turing</p>
+<section id="home" class="home-wrapper">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+
+      <div class="intro col-12 text-center">
+        <h1 class="nome-titulo">Kauane Vergasta</h1>
+        <h3 class="cargo-subtitulo">Software Developer - FullStack</h3>
+
+        <div class="frase-container">
+          <p id="citacao">"Aqueles que podem imaginar qualquer coisa, podem criar o impossível."</p>
+          <p id="autor">— Alan Turing</p>
+        </div>
+
+        <div class="btn-group-custom">
+          <button type="button" class="btn-outline">Projetos</button>
+          <button type="button" class="btn-outline">Contato</button>
+          <a href="https://docs.google.com/document/d/1oA8JF-VYZV42B1lacpfg75qAhAyljvOmhD6ceqPQJp8/edit?usp=sharing" target="_blank">
+          <button type="button" class="btn-filled">
+            <span>Curriculum Vitae</span>
+          </button>
+          </a>
+        </div>
       </div>
-      <div class="btnG col-md-4">
-        <button type="button">Projetos</button>
-        <button type="button">Contato</button>
-        <button type="button">
-        <mat-icon>download</mat-icon>
-          Download CV
-        </button>
-      </div>
+
     </div>
-    <img src="/assets/perfil.webp" class="rounded float-end" alt="Kauane Vergasta">
   </div>
 </section>
+
 
 <section id="sobre">
   <app-sobre></app-sobre>

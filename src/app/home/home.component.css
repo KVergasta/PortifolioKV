@@ -1,46 +1,112 @@
- .home{
+/* Container Geral da Home */
+.home-wrapper {
+  /* background-color: #0F0E0E; Fundo escuro profundo */
+  min-height: 90vh; /* Ocupa quase a tela toda */
   display: flex;
-  flex-direction: row;
-  padding-bottom: 10%;
-  justify-content: center;
   align-items: center;
-  /* background-color: #842A3B; */
+  justify-content: center;
+  padding: 60px 0;
 }
 
-button{
-  background-color: transparent !important;
-  border: solid;
-  border-color: #F3F4F4;
-  color: aliceblue;
-  padding: 5%;
-  border-radius: 5px;
-  margin-right: 2%;
+/* Tipografia */
+.nome-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(40px, 10vw, 75px); /* Tamanho fluido */
+  color: #F3F4F4;
+  margin-bottom: 0;
+  letter-spacing: -1px;
 }
 
-
-button:hover{
-  background-color: #F3F4F4!important;
-  color: black;
-  font-style: bold;
+.cargo-subtitulo {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: clamp(28px, 6vw, 45px);
+  color: #D4AF37; /* Tom de Ouro */
+  margin-bottom: 30px;
 }
 
-img{
-    max-width: 30%;
-    height: auto;   /* Mantém a proporção */
+/* Frase de Efeito */
+.frase-container {
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  color: #F3F4F4;
+  opacity: 0.7;
 }
 
-h1{
-  font-size: 55px;
-  font-family: 'Playfair Display';
+#citacao {
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
-h3{
-  font-size: 40px;
-  font-family: 'Dancing Scrip'!important;
+#autor {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #ffffff; /* Tom Marsala */
 }
 
-/* .frase{
+/* --- Grupo de Botões (O Alinhamento) --- */
+.btn-group-custom {
   display: flex;
-  align-items:flex-start;
-  flex-direction: column;
-} */
+  flex-direction: row;      /* Força o alinhamento lado a lado */
+  justify-content: center;  /* Centraliza na tela */
+  align-items: center;      /* Alinha verticalmente */
+  gap: 20px;                /* Espaçamento uniforme entre eles */
+  flex-wrap: wrap;          /* Quebra linha automaticamente no celular */
+}
+
+/* Estilo Base dos Botões */
+button {
+  background: transparent;
+  border: 2px solid #F3F4F4;
+  color: #F3F4F4;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Botão de Contorno */
+.btn-outline:hover {
+  background-color: #F3F4F4 !important;
+  color: #0F0E0E;
+  transform: translateY(-5px);
+}
+
+/* Botão com Fundo (Destaque para o CV) */
+.btn-filled {
+  border-color: #D4AF37;
+  color: #D4AF37;
+}
+
+.btn-filled:hover {
+  background-color: #D4AF37 !important;
+  color: #0F0E0E;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Ajuste do ícone */
+mat-icon {
+  font-size: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+/* Responsividade Celular */
+@media (max-width: 576px) {
+  .btn-group-custom {
+    flex-direction: column; /* No celular bem pequeno, empilha para não esmagar */
+    width: 100%;
+  }
+
+  button {
+    width: 80%; /* Botões mais largos no mobile */
+  }
+}
