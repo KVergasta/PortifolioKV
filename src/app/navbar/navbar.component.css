@@ -1,37 +1,99 @@
-.navbar{
-  background-color: #2C2C2C!important;
-  color: white!important;
-  /* display:flex;
-  position: fixed!important; */
+.navbar {
+  background-color: #0F0E0E !important; /* Cor sólida para não vazar conteúdo atrás */
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 15px 5%;
+  transition: 0.3s;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #F3F4F4 !important;
+}
+
+.logo {
+  color: #D4AF37;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #F3F4F4 !important;
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 0.9rem;
+  margin: 0 10px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* Efeito Hover Elegante */
+.nav-link:hover {
+  color: #D4AF37 !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #722F37; /* Linha Marsala */
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.menuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #D4AF37;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+/* --- Mobile Responsivo --- */
+@media (max-width: 991px) {
+  .menuBtn {
+    display: block;
   }
 
-.navbar-brand{
-  font-family: 'Playfair Display';
-  font-size: 25px;
-}
-
-a{
-  color: white!important;
-}
-
-li a:hover{
-  background-color: #662222!important;
-  color: white!important;
-  border-width: 3px;
-  border-style:solid;
-  /* border-radius: 20px; */
-  border-image: linear-gradient(to bottom, #83580B, #F5DD7B, #83580B) 3;
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Escondido fora da tela */
+    width: 80%;
+    height: 100vh;
+    background-color: #0F0E0E;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+    z-index: 1000;
   }
 
-.logo{
-  display: flex!important;
-  /* margin-left: 1%!important; */
-  margin-right: 3% !important;
-}
+  /* Quando o menu estiver aberto */
+  .navbar-collapse.show {
+    right: 0;
+  }
 
-/* --- Responsividade --- */
-@media (max-width: 768px) {
-  .titulo-principal { font-size: 2.2rem; }
-  .stats-bar { border-radius: 20px; flex-direction: column; align-items: flex-start; }
-  .card-item:hover { transform: translateY(-5px); }
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+  }
 }

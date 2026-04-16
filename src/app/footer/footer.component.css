@@ -1,4 +1,72 @@
-.footer{
-  background-color: #D8A25E!important;
-  color: black;
+.footer-container {
+  /* Invertendo para dar destaque final: Fundo Ouro com texto escuro ou Marsala */
+  background-color: #D4AF37; /* Cor de Ouro */
+  color: #0F0E0E;
+  padding: 50px 5%;
+  text-align: center;
+  border-top: 5px solid #722F37; /* Borda Marsala para separação */
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer-message p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.heart-icon {
+  color: #722F37; /* Coração em Marsala */
+  transform: scale(1.2);
+  animation: pulse 2s infinite;
+}
+
+.footer-details {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.linha-separadora {
+  width: 30px;
+  height: 1px;
+  background-color: #722F37;
+  margin: 10px auto;
+}
+
+.location {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Animação suave no coração */
+@keyframes pulse {
+  0% { transform: scale(1.1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1.1); }
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .footer-logo { font-size: 1.5rem; }
+  .footer-message p { font-size: 1.1rem; }
 }

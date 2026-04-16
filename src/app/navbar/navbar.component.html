@@ -1,24 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <mat-icon class="logo">polymer</mat-icon>
+    <div class="brand-container">
+      <mat-icon class="logo">polymer</mat-icon>
       <a class="navbar-brand">Kauane Vergasta</a>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    </div>
+
+    <button class="menuBtn" (click)="toggleMenu()">
+      <mat-icon>{{ isMenuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sobre">Sobre mim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projetos">Projetos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contato">Contato</a>
-        </li>
+        <li class="nav-item"><a class="nav-link" href="#home" (click)="closeMenu()">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre" (click)="closeMenu()">Sobre mim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projetos" (click)="closeMenu()">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" (click)="closeMenu()">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato" (click)="closeMenu()">Contato</a></li>
       </ul>
     </div>
   </div>
