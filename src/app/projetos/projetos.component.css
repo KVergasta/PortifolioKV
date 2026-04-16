@@ -1,25 +1,135 @@
-:host{
+:host {
   display: block;
+  background-color: #0F0E0E;
+  padding: 80px 0;
   min-height: 100vh;
-  /* min-width: 100vh; */
-  /* background-color: #0F0E0E; */
-    padding: 10%;
-
-  background-image: url('/assets/visax.jpg');
 }
 
-.projetos{
+.txt-header {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.card{
-  height: 32%;
-  width: 30%;
-  color: white;
-  background-color: #2C2C2C;
+.titulo-sessao {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: #D4AF37; /* Ouro */
+  margin-bottom: 10px;
 }
 
-.cardsG{
-  margin-top: 10%;
+.linha-decorativa {
+  width: 60px;
+  height: 4px;
+  background-color: #5E0006; /* Marsala */
+  margin: 0 auto;
+}
+
+/* --- Card Style --- */
+.card {
+  background: rgba(44, 44, 44, 0.3) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(216, 162, 94, 0.2) !important;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: #D4AF37 !important;
+  box-shadow: 0 15px 30px rgba(94, 0, 6, 0.3);
+  background: rgba(44, 44, 44, 0.6) !important;
+}
+
+.card-body {
+  padding: 30px;
+  color: #F3F4F4;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #F3F4F4;
+}
+
+.card-text {
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* --- Tags --- */
+.tags {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #D4AF37;
+  border: 1px solid #D4AF37;
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* --- Buttons --- */
+.card-footer {
+  background: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+}
+
+.buttonsG {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn-projeto {
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+  background-color: #5E0006; /* Marsala */
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #F3F4F4;
+}
+
+.btn-projeto:hover {
+  background-color: #842A3B; /* Marsala mais claro */
+  color: white;
+  transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+  background-color: #F3F4F4;
+  color: #0F0E0E;
+}
+
+mat-icon {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .titulo-principal { font-size: 2.2rem; }
+  .stats-bar { border-radius: 20px; flex-direction: column; align-items: flex-start; }
+  .card-item:hover { transform: translateY(-5px); }
 }

@@ -1,5 +1,92 @@
-:host{
+:host {
   display: block;
-  min-height: 100vh;
-  padding: 10%;
+  background-color: #0F0E0E; /* Mantendo o padrão escuro */
+  padding: 80px 5%;
+  min-height: 80vh;
+}
+
+.txt-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.titulo-sessao {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: #D4AF37; /* Dourado */
+  margin-bottom: 10px;
+}
+
+.linha-decorativa {
+  width: 50px;
+  height: 3px;
+  background-color: #722F37; /* Marsala */
+  margin: 0 auto;
+}
+
+/* --- Grid e Cards de Skills --- */
+.skill-card {
+  background: rgba(44, 44, 44, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  border-radius: 15px;
+  padding: 25px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background: rgba(114, 47, 55, 0.15); /* Sutil brilho Marsala */
+  border-color: #D4AF37;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+}
+
+/* Padronização das Imagens */
+.skill-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(30%) brightness(0.9);
+  transition: 0.3s;
+}
+
+.skill-card:hover img {
+  filter: grayscale(0%) brightness(1.1);
+  transform: scale(1.1);
+}
+
+/* Nome da tecnologia abaixo do ícone */
+.skill-card span {
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 0.75rem;
+  color: #F3F4F4;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.skill-card:hover span {
+  opacity: 1;
+  color: #D4AF37;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .titulo-sessao {
+    font-size: 2.5rem;
+  }
+  .skill-card {
+    padding: 15px 10px;
+  }
+  .skill-card img {
+    width: 40px;
+    height: 40px;
+  }
 }

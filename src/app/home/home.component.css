@@ -110,3 +110,10 @@ mat-icon {
     width: 80%; /* Botões mais largos no mobile */
   }
 }
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+  .titulo-principal { font-size: 2.2rem; }
+  .stats-bar { border-radius: 20px; flex-direction: column; align-items: flex-start; }
+  .card-item:hover { transform: translateY(-5px); }
+}

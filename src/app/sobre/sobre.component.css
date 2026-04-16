@@ -4,6 +4,9 @@
   color: #F3F4F4;
   font-family: 'Playwrite DE Grund', sans-serif;
 }
+ul{
+  list-style: none;
+}
 
 .sobre-container {
   padding: 80px 5%;

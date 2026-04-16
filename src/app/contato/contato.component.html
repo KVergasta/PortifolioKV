@@ -1,22 +1,38 @@
-<div class="contato">
-  <div class="txt">
-    <h1>Contato</h1>
-    <p>Entre em contato preenchendo o formulário diretamente ou através das minhas redes sociais</p>
+<section class="contato-container">
+  <div class="txt-header">
+    <h1 class="titulo-sessao">Contato</h1>
+    <p class="subtitulo">Vamos construir algo incrível juntos? Me mande uma mensagem!</p>
   </div>
 
-  <div class="formulario">
-    <div class="mb-3">
-      <label for="exampleFormControlInput1" class="form-label">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <div class="container d-flex justify-content-center">
+    <div class="formulario-card">
+      <form>
+        <div class="mb-4">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+        </div>
+
+        <div class="mb-4">
+          <label for="titulo" class="form-label">Assunto</label>
+          <input type="text" class="form-control" id="titulo" placeholder="No que posso ajudar?">
+        </div>
+
+        <div class="mb-4">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn-enviar">
+            <mat-icon>send</mat-icon> Enviar Mensagem
+          </button>
+        </div>
+      </form>
+
+      <div class="redes-sociais">
+        <a href="https://github.com/KVergasta" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/kauane-vergasta-a3a602219/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+      </div>
     </div>
-    <div class="mb-3">
-      <label class="form-label">Titulo da mensagem</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Titulo da mensagem">
-    </div>
-    <div class="mb-3">
-      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <button type="button" class="btn btn-light">Enviar</button>
   </div>
-</div>
+</section>

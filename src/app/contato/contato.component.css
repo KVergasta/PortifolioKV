@@ -1,18 +1,130 @@
-:host{
+:host {
   display: block;
-  padding: 10%;
+  background-color: #0F0E0E;
   min-height: 100vh;
+  padding: 80px 5%;
 }
 
-.contato{
+.txt-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.titulo-sessao {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: #D4AF37; /* Ouro */
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-family: 'Playwrite DE Grund', sans-serif;
+  color: #F3F4F4;
+  opacity: 0.8;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* --- Card do Formulário --- */
+.formulario-card {
+  background-color: #5E0006; /* Marsala */
+  padding: 50px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.form-label {
+  color: #D4AF37;
+  font-family: 'Playwrite DE Grund', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* --- Inputs Personalizados --- */
+.form-control {
+  background-color: rgba(15, 14, 14, 0.5) !important;
+  border: 1px solid rgba(243, 244, 244, 0.2);
+  color: #F3F4F4 !important;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: rgba(15, 14, 14, 0.8) !important;
+  border-color: #D4AF37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: rgba(243, 244, 244, 0.4);
+  font-size: 0.85rem;
+}
+
+/* --- Botão Enviar --- */
+.btn-enviar {
+  background-color: #D4AF37; /* Ouro */
+  color: #0F0E0E;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
-.formulario{
-  background-color: #5E0006;
-  padding: 10%;
-  border-radius: 20px;
+.btn-enviar:hover {
+  background-color: #F3F4F4;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-enviar mat-icon {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+/* --- Redes Sociais no Rodapé do Card --- */
+.redes-sociais {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-top: 1px solid rgba(243, 244, 244, 0.1);
+  padding-top: 20px;
+}
+
+.redes-sociais a {
+  color: #F3F4F4;
+  text-decoration: none;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #D4AF37;
+  opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .formulario-card {
+    padding: 30px 20px;
+  }
+  .titulo-sessao {
+    font-size: 2.5rem;
+  }
 }
