@@ -1,6 +1,6 @@
 .app-contaiener{
-    background-color: #0F0E0E !important; /* Fundo principal escuro */
-  /* background-image: url('/assets/alex.jpg'); */
+    /* background-color: #0F0E0E !important;  */
+  background-image: url('/assets/alex.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
