@@ -1,6 +1,6 @@
 /* Container Geral da Home */
 .home-wrapper {
-  /* background-color: #0F0E0E; */
+  background-color: #0F0E0E !important;
   min-height: 90vh; /* Ocupa quase a tela toda */
   display: flex;
   align-items: center;
