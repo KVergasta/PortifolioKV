@@ -127,6 +127,36 @@ mat-icon {
   width: 18px;
   height: 18px;
 }
+
+.status span{
+    font-size: 0.7rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #083c8a;
+  /* border: 1px solid #d43737; */
+  padding: 4px 10px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-text{
+  text-align: justify;
+  margin-bottom: 10%;
+}
+
+.card-title{
+  margin-bottom: 10%;
+}
+
+.status #andamento{
+  color: #000000;
+  background-color: #d4be3f;
+}
+.status #backlog{
+  color: #ffffff;
+  background-color: #4d4a4a;
+}
 /* --- Responsividade --- */
 @media (max-width: 768px) {
   .titulo-principal { font-size: 2.2rem; }

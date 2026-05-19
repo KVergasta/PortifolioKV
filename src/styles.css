@@ -5,8 +5,9 @@
 /* @import "~material-design-icons/iconfont/material-icons.css"; */
 
 html, body { height: 100%; }
+html{
+  scroll-behavior: smooth;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-/* :host{
-    background-color: #0F0E0E;
-} */
+

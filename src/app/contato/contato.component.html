@@ -6,10 +6,10 @@
 
   <div class="container d-flex justify-content-center">
     <div class="formulario-card">
-      <form>
+      <form (ngSubmit)="notificar()">
         <div class="mb-4">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+          <input type="email" class="form-control" id="email" value="kauvergasta12@gmail.com" readonly>
         </div>
 
         <div class="mb-4">
