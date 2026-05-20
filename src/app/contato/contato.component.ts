@@ -4,7 +4,7 @@ import { ContatoService } from 'src/domain/contatoService.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NotificacaoEntity } from 'src/domain/notificacao.model';
 import { Canal } from 'src/domain/canal.enum';
-// import { ToastrService } from 'ngx-toastr';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contato',
@@ -18,7 +18,7 @@ export class ContatoComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private http: HttpClient,
-    // private toastr: ToastrService,
+    private toastr: ToastrService,
     private notifcacao: ContatoService) {
       this.formEmail = this.fb.group({
         infoUser:['kauvergasta12@gmail.com', Validators.required],
@@ -31,7 +31,6 @@ export class ContatoComponent implements OnInit {
   }
 
   notificar(){
-    console.log('o formulário está invalido?: '+ this.formEmail.valid)
     if(this.formEmail.valid){
 
       const email: NotificacaoEntity = {
@@ -41,21 +40,27 @@ export class ContatoComponent implements OnInit {
         type: Canal.EMAIL,
       }
 
-            this.notifcacao.generatorEmail(email)
-      .subscribe({
-        next:(response)=> {console.log("Email is sent", response);
-          this.formEmail.reset();
-          this.formEmail.patchValue({
-          infoUser: 'kauvergasta12@gmail.com'
-        });
-      }, error: (error) => {console.error("Error",error)}
-    });
-    // this.sucessoNotify();
+      this.notifcacao.generatorEmail(email)
+        .subscribe({
+          next:(response)=> {console.log("Email is sent", response);
+            this.formEmail.reset();
+            this.formEmail.patchValue({
+            infoUser: 'kauvergasta12@gmail.com'
+          });
+          this.sucessoNotify();
+        }, error: (error) => {console.error("Error",error)
+          this.erroNotify();
+        }
+      });
     }
   }
 
-  // sucessoNotify(){
-  //   this.toastr.success('E-mail enviado com sucesso! - NotificationHub')
-  // }
+  sucessoNotify(){
+    this.toastr.success('E-mail enviado com sucesso! - NotificationHub')
+  }
+
+  erroNotify(){
+    this.toastr.error('Por favor tente mais tarde')
+  }
 
 }

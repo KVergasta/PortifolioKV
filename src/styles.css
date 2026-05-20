@@ -11,3 +11,41 @@ html{
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+/* notificação */
+
+/* --- ESTILIZAÇÃO GLOBAL DO TOASTR --- */
+
+/* Forçar o balão a flutuar no canto superior direito por cima de tudo */
+.toast-container {
+  position: fixed !important;
+  z-index: 999999 !important;
+  top: 20px !important;
+  right: 20px !important;
+}
+
+/* Customização do card de alerta */
+.toast-container .ngx-toastr {
+  background-color: #842A3B !important; /* Tom de Borgonha */
+  color: #F5DAA7 !important;            /* Texto Creme/Areia */
+  border: 1px solid #D9B650 !important;  /* Borda Dourada sutil */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 12px !important;
+  padding: 18px 20px 18px 50px !important; /* Espaço para o ícone */
+  opacity: 0.98 !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+/* Modificar a cor do título principal */
+.toast-title {
+  color: #F5DD7B !important; /* Dourado / Champanhe */
+  font-weight: bold !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 4px !important;
+}
+
+/* Modificar o texto da mensagem descritiva */
+.toast-message {
+  font-family: 'Playwrite DE Grund', sans-serif !important;
+  font-size: 0.9rem !important;
+  opacity: 0.9 !important;
+}

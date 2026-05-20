@@ -38,7 +38,11 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     MatIconModule,
     BrowserAnimationsModule,
-    ToastrModule
+    ToastrModule.forRoot({ // <-- Adicione o .forRoot() com as configurações
+      timeOut: 4000,
+      positionClass: 'toast-top-right',
+      preventDuplicates: true,
+    })
 
   ],
   providers: [],
