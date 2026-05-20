@@ -4,7 +4,7 @@ import { ContatoService } from 'src/domain/contatoService.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NotificacaoEntity } from 'src/domain/notificacao.model';
 import { Canal } from 'src/domain/canal.enum';
-
+// import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-contato',
@@ -18,6 +18,7 @@ export class ContatoComponent implements OnInit {
 
   constructor(private fb: FormBuilder,
     private http: HttpClient,
+    // private toastr: ToastrService,
     private notifcacao: ContatoService) {
       this.formEmail = this.fb.group({
         infoUser:['kauvergasta12@gmail.com', Validators.required],
@@ -34,7 +35,7 @@ export class ContatoComponent implements OnInit {
     if(this.formEmail.valid){
 
       const email: NotificacaoEntity = {
-        title: this.formEmail.get('subject')?.value,
+        title: 'Portifólio : ' + this.formEmail.get('subject')?.value,
         infoUser: this.formEmail.get('infoUser')?.value,
         message: this.formEmail.get('message')?.value,
         type: Canal.EMAIL,
@@ -46,10 +47,15 @@ export class ContatoComponent implements OnInit {
           this.formEmail.reset();
           this.formEmail.patchValue({
           infoUser: 'kauvergasta12@gmail.com'
-      });
-        }, error: (error) => {console.error("Error",error)}
-      });
+        });
+      }, error: (error) => {console.error("Error",error)}
+    });
+    // this.sucessoNotify();
     }
   }
+
+  // sucessoNotify(){
+  //   this.toastr.success('E-mail enviado com sucesso! - NotificationHub')
+  // }
 
 }
