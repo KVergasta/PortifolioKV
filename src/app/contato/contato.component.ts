@@ -30,7 +30,7 @@ export class ContatoComponent implements OnInit {
   }
 
   notificar(){
-    console.log(this.formEmail.valid)
+    console.log('o formulário está invalido?: '+ this.formEmail.valid)
     if(this.formEmail.valid){
 
       const email: NotificacaoEntity = {

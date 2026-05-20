@@ -6,20 +6,20 @@
 
   <div class="container d-flex justify-content-center">
     <div class="formulario-card">
-      <form (ngSubmit)="notificar()">
+      <form (ngSubmit)="notificar()" [formGroup]="formEmail">
         <div class="mb-4">
           <label for="email" class="form-label">E-mail</label>
-          <input type="email" class="form-control" id="email" value="kauvergasta12@gmail.com" readonly>
+          <input type="email" class="form-control" formControlName="infoUser" id="email" value="kauvergasta12@gmail.com" readonly>
         </div>
 
         <div class="mb-4">
           <label for="titulo" class="form-label">Assunto</label>
-          <input type="text" class="form-control" id="titulo" placeholder="No que posso ajudar?">
+          <input type="text" class="form-control" id="titulo"  formControlName="subject" placeholder="No que posso ajudar?">
         </div>
 
         <div class="mb-4">
           <label for="mensagem" class="form-label">Mensagem</label>
-          <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+          <textarea class="form-control" id="mensagem" rows="4" formControlName="message" placeholder="Escreva sua mensagem aqui..."></textarea>
         </div>
 
         <div class="d-grid">
