@@ -1,29 +1,75 @@
-# Portifolio2026
+# 💼 Portfólio Personal 2026
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.18.
+Este é o meu repositório central de apresentação profissional e portfólio de engenharia de software desenvolvido em **Angular 12**. A aplicação reúne minha trajetória, habilidades técnicas em arquitetura de microsserviços (Java, Spring Boot, Kafka), além de servir como ponto de ancoragem para demonstração de projetos práticos e dashboards inteligentes.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 🎨 Identidade Visual & Paleta de Cores
 
-## Code scaffolding
+O design da aplicação foi projetado sob os conceitos de *Modern Dark Mode* e contrastes sofisticados, utilizando paletas de cores cuidadosamente selecionadas via *Color Hunt* para balancear estética e acessibilidade:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 🟤 Paleta Primária: Elegância e Sóbrio
 
-## Build
+* **Vinho Profundo / Escuro:** `#662222` (Fundo de blocos estruturais)
+* **Borgonha:** `#842A3B` (Destaques e links ativos)
+* **Carmesim Suave:** `#A3485A` (Bordas e elementos secundários)
+* **Areia Clara:** `#F5DAA7` (Tipografia e leitura limpa)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🟡 Paleta Secundária: Destaque e Energia
 
-## Running unit tests
+* **Ouro Velho / Bronze:** `#83580B` (Cards de skills e conquistas)
+* **Dourado:** `#D9B650` (Avisos e interações)
+* **Champanhe:** `#F5DD7B` (Títulos destacados)
+* **Marfim:** `#FDE994` (Contrastes textuais sutis)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+## 🛠️ Tecnologias e Recursos em Destaque
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* **Single Page Application (SPA):** Navegação fluida de alto desempenho sem recarregamento de página.
+* **Seção Reativa de Habilidades:** Cards interativos exibindo proficiência em ecossistemas de backend (Spring Boot, Postgres, Docker, Kafka) e frontend (Angular, RxJS).
+* **Integração com Ecossistema de APIs:** Módulos de conexão direta com serviços utilitários em execução local ou em nuvem.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-https://colorhunt.co/palette/662222842a3ba3485af5daa7
-https://colorhunt.co/palette/83580bd9b650f5dd7bfde994
+## 🚀 Como Executar Localmente
+
+### 📋 Pré-requisitos
+
+* **Node.js** (v12 ou v16 compatível com Angular 12)
+* **Angular CLI** instalado globalmente
+
+```bash
+# 1. Instalar as dependências do projeto
+npm install
+
+# 2. Iniciar o servidor de desenvolvimento
+ng serve
+
+```
+
+Abra o navegador em `http://localhost:4200/` para visualizar o portfólio. O servidor conta com recarregamento automático a cada modificação nos arquivos de estilo ou estrutura.
+
+---
+
+## 🧩 Comandos Úteis do Angular CLI
+
+| Comando | Descrição |
+| --- | --- |
+| `ng generate component components/nome` | Cria um novo componente estruturado. |
+| `ng generate service services/nome` | Cria um serviço de injeção de dependência/API. |
+| `ng build` | Compila os arquivos para produção na pasta `dist/`. |
+| `ng test` | Executa os testes unitários da aplicação via Karma. |
+
+---
+
+## 📈 Evolução Contínua
+
+Este portfólio reflete meu aprendizado e atuação no mercado de TI, integrando novos módulos de monitoramento conforme o ecossistema de projetos paralelos se expande.
+
+---
+
+### . (Ponto) - Resumo Estratégico
+
+* **Ponto Chave:** Um portfólio bem documentado com referências explícitas à arquitetura e paletas de cores demonstra maturidade profissional, capricho técnico e domínio de boas práticas de design (UI/UX).
+* **Aprofundamento:** No mercado de desenvolvimento, alinhar o código do portfólio a projetos complexos como o seu **NotificationHub** cria um ecossistema de alto valor. Quando um avaliador olha o seu frontend de apresentação pessoal estruturado, ele entende que por trás há uma engenharia sólida que sabe conversar com brokers de mensagens e bancos relacionais.
