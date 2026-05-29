@@ -8,7 +8,7 @@ import { NotificacaoEntity } from "./notificacao.model";
   providedIn: 'root'
 })
 export class ContatoService{
-  private readonly API ='http://localhost:8000/api/notification';
+  private readonly API ='https://notificationhubapi.onrender.com/api/notification';
 
   constructor(
     private http: HttpClient,
